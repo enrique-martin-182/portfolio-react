@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fuente base */
+:root { --ring: 211 100% 50%; }
+html, body, #root { height: 100%; font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+
+/* Fondo con gradientes suaves + grid sutil */
+body {
+  background: #0a0a0b;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(56,189,248,0.10), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(192,38,211,0.10), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(148,163,184,0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148,163,184,0.08) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+  .mask-fade {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+            mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+  }
+  .shadow-glow {
+    box-shadow: 0 0 40px rgba(59,130,246,0.35);
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 9s ease-in-out infinite;
+  }
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% { background-position: 0% 50%;}
+}
+
+/* Mejora de focus */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring)/.8);
+  outline-offset: 2px;
+}
