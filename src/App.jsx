@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProjectsSection from "./sections/ProjectsSection.jsx";
 import SkillsSection from "./sections/SkillsSection.jsx";
+import Background from "./components/Background.jsx";
 import { Sun, Moon, Mail, FileDown } from "lucide-react";
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -31,13 +32,8 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
-      {/* Fondo decorativo */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid mask-fade" />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 animate-gradient bg-[radial-gradient(60%_60%_at_50%_0%,rgba(99,102,241,0.20),rgba(0,0,0,0))]"
-      />
+    <div className="relative min-h-screen text-zinc-900 dark:text-zinc-100">
+      <Background />
 
       {/* Header */}
       <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-zinc-950/40 border-b border-zinc-200/60 dark:border-zinc-800">

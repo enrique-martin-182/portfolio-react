@@ -6,19 +6,6 @@
 html, body, #root { height: 100%; }
 
 @layer utilities {
-  /* Grid sutil para el fondo */
-  .bg-grid {
-    background-image:
-      linear-gradient(rgba(148,163,184,0.15) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148,163,184,0.15) 1px, transparent 1px);
-    background-size: 40px 40px;
-    background-position: center;
-  }
-  /* Suaviza bordes del grid hacia los lados */
-  .mask-fade {
-    -webkit-mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
-            mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
-  }
   /* Gradiente animado para titulares y fondos */
   .animate-gradient {
     background-size: 200% 200%;
