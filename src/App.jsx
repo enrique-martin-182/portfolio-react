@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectsSection from "./sections/ProjectsSection.jsx";
+import SkillsSection from "./sections/SkillsSection.jsx";
 import { Sun, Moon, Mail, FileDown } from "lucide-react";
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -107,6 +108,9 @@ export default function App() {
           </a>
         </div>
       </section>
+
+      {/* Habilidades */}
+      <SkillsSection />
 
       {/* Proyectos */}
       <ProjectsSection />
