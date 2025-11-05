@@ -3,6 +3,20 @@ import ProjectCard from "../components/ProjectCard.jsx";
 
 const projects = [
   {
+    title: "QueLoKhé — Pokémon Community",
+    href: "https://quelokhe.vercel.app/",
+    description:
+      "Web comunitaria de Pokémon con reproductor de música, minijuegos y enlaces a la comunidad (Discord).",
+    tags: ["React", "Tailwind", "Audio Player"],
+  },
+  {
+    title: "QA Control Room",
+    href: "https://github.com/enrique-martin-182/qa-control-room",
+    description:
+      "Panel para orquestar pruebas E2E: ejecución, reporting y métricas de estabilidad.",
+    tags: ["React", "Playwright", "Fastify", "TypeScript"],
+  },
+  {
     title: "Password Generator",
     href: "https://password-generator-blond-omega.vercel.app/",
     description:
